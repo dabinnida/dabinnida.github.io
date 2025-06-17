@@ -50,8 +50,6 @@ The site is designed to help them easily find, explore, and save potential anima
 
 - Improve the **filter button UI/UX** to make selection more intuitive
 - Implement **adoption application download feature**
-- Add **responsive web design** for mobile users
-- Enable **multi-filter combinations** (e.g., breed + personality + availability)
 - Reattempt **embedding the map directly** into the site using iframe or better JS methods
 
 ---
