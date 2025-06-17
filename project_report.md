@@ -51,6 +51,7 @@ The site is designed to help them easily find, explore, and save potential anima
 - Improve the **filter button UI/UX** to make selection more intuitive
 - Implement **adoption application download feature**
 - Reattempt **embedding the map directly** into the site using iframe or better JS methods
+- I would like to activate a region-based filter and expand the website's coverage beyond Busan to include all regions across South Korea.
 
 ---
 
