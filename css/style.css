@@ -1,0 +1,171 @@
+/* ---------- index.html 스타일 ---------- */
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #fff5f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.home {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+}
+
+.adopt-card {
+  border-radius: 20px;
+  padding: 40px 20px;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  text-decoration: none;
+  width: 250px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.adopt-card:hover {
+  transform: scale(1.05);
+}
+
+.dog {
+  background-color: #b3d9ff;
+}
+
+.cat {
+  background-color: #f9c5d1;
+}
+
+/* ---------- breeds.html 스타일 ---------- */
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.pet-card {
+  border-radius: 15px;
+  padding: 20px;
+  color: #333;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  text-align: center;
+  transition: transform .2s;
+  position: relative;
+  overflow: hidden;
+  background-color: #ffeef0;
+  width: 180px;
+}
+
+.pet-card:hover {
+  transform: translateY(-4px);
+}
+
+.pet-card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.pet-card h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.fav-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #ff5a5f;
+}
+.fav-btn.active {
+  color: #ff0000;
+}
+
+.filters, .breed-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.filters input#search {
+  width: 200px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  font-size: 14px;
+}
+
+.filters input#search::placeholder {
+  color: #aaa;
+}
+
+.filters .filter {
+  padding: 6px 12px;
+  margin-left: 8px;
+  border: 1px solid #bbb;
+  border-radius: 8px;
+  background-color: #fff;
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.filters .filter:hover {
+  background-color: #eee;
+}
+
+.filters .filter.active {
+  background-color: #333;
+  color: #fff;
+  border-color: #333;
+}
+
+.modal {
+  position: fixed;
+  z-index: 999;
+  left: 0; top: 0;
+  width: 100%; height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex; justify-content: center; align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 400px;
+}
+
+#map-button {
+  margin-top: 10px;
+  background-color: #b3d9ff;
+  padding: 10px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#map {
+  width: 100%;
+  height: 300px;
+  margin-top: 10px;
+  display: none;
+}
